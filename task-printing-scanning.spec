@@ -5,7 +5,7 @@ Name: task-printing-scanning
 Version: 2008
 Release: %mkrel 1
 License: GPL
-Group: System/Kernel and hardware
+Group: System/Printing
 Url: http://www.mandriva.com
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch: noarch
@@ -29,7 +29,7 @@ scanning packages used in Mandriva.
 
 
 %package -n task-printing
-Group: System/Kernel and hardware
+Group: System/Printing
 Summary: Task package for printing
 Requires: ImageMagick
 Requires: a2ps
@@ -106,7 +106,7 @@ used in Mandriva.
 
 %package -n task-printing-server
 Summary: Meta package for a full CUPS server
-Group: Tasks
+Group: System/Printing
 Requires: cups			>= %{cups_ver}
 Requires: ghostscript		>= %{ghostscript_ver}
 Requires: printer-tools		>= %{printer_tools_ver}
@@ -127,7 +127,7 @@ CUPS server, including some utilities.
 
 %package -n task-printing-canon
 Summary: Meta package for Cannon printer drivers
-Group: Tasks
+Group: System/Printing
 Requires: task-printing-server	= %{version}-%{release}
 
 # The drivers
@@ -151,7 +151,7 @@ get it working.
 
 %package -n task-printing-epson
 Summary: Meta package for printer drivers for Epson
-Group: Tasks
+Group: System/Printing
 Requires: task-printing-server	= %{version}-%{release}
 
 # The drivers
@@ -178,7 +178,7 @@ get it working.
 
 %package -n task-printing-hp
 Summary: Meta package for printer drivers for HP
-Group: Tasks
+Group: System/Printing
 Requires: task-printing-server	= %{version}-%{release}
 
 # The drivers
@@ -203,7 +203,7 @@ get it working.
 
 %package -n task-printing-lexmark
 Summary: Meta package for printer drivers for Lexmark
-Group: Tasks
+Group: System/Printing
 Requires: task-printing-server = %{version}-%{release}
 
 # The drivers
@@ -239,7 +239,7 @@ get it working.
 
 %package -n task-printing-misc
 Summary: Meta package for printer drivers for miscelaneous printers
-Group: Tasks
+Group: System/Printing
 Requires: task-printing-server	= %{version}-%{release}
 
 # The drivers
@@ -270,7 +270,7 @@ Xerox.
 
 %package -n task-printing-okidata
 Summary: Meta package for printer drivers for Okidata
-Group: Tasks
+Group: System/Printing
 Requires: task-printing-server	= %{version}-%{release}
 
 # The drivers
