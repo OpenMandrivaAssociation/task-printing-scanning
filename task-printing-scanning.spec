@@ -3,12 +3,13 @@
 Summary: Task package for printing and scanning
 Name: task-printing-scanning
 Version: 2008
-Release: %mkrel 2
+Release: %mkrel 3
 License: GPL
 Group: System/Printing
 Url: http://www.mandriva.com
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildArch: noarch
+# <mrl> Due to sane-hpaio and to avoid rebuilding sane now (2008rc2)
+#BuildArch: noarch
 Requires: task-printing = %{version}
 Requires: foomatic-db-hpijs
 Requires: hplip
