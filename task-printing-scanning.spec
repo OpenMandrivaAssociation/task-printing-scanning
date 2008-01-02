@@ -7,6 +7,7 @@ Release: %mkrel 4
 License: GPL
 Group: System/Printing
 Url: http://www.mandriva.com
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 # <mrl> Due to sane-hpaio and to avoid rebuilding sane now (2008rc2)
 #BuildArch: noarch
 Requires: task-printing = %{version}
