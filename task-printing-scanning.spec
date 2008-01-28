@@ -3,7 +3,7 @@
 Summary: Task package for printing and scanning
 Name: task-printing-scanning
 Version: 2008
-Release: %mkrel 4
+Release: %mkrel 5
 License: GPL
 Group: System/Printing
 Url: http://www.mandriva.com
@@ -191,6 +191,8 @@ Requires: gutenprint-foomatic	>= %{gutenprint_ver}
 Requires: gutenprint-ijs	>= %{gutenprint_ver}
 Requires: cups-drivers-foo2zjs	>= %{cups_drivers_foo2zjs_ver}
 Requires: hplip			>= %{hplip_ver}
+# Due to HP Fax .ppd file, needed by printerdrake.
+Requires: hplip-hpijs-ppds	>= %{hplip_ver}
 Requires: pnm2ppa		>= %{pnm2ppa_ver}
 
 %description -n task-printing-hp
