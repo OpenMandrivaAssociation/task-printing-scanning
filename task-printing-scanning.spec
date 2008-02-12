@@ -265,10 +265,10 @@ This meta package will install every printer driver available for printers from
 miscelaneous manufacturers.
 
 This package should cover printers from:
-Alps, Anitech, Apollo, Apple, Avery, Brother, Citizen, Citoh, Compaq, Dec, Dell,
-Dymo, Fujitsu, IBM, Imagen, Infotec, Kodak, Kyocera, Minolta, Mitsubishi, Nec,
-Oce, Olivetti, Panasonic, Pcpi, Pentax, QMS, Ricoh, Samsung, Star, Tektronix and
-Xerox.
+Alps, Anitech, Apollo, Apple, Avery, Brother, Citizen, Citoh, Compaq, Dec,
+Dell, Dymo, Fujitsu, IBM, Imagen, Infotec, Kodak, Kyocera, Minolta, Mitsubishi,
+Nec, Oce, Olivetti, Panasonic, Pcpi, Pentax, QMS, Ricoh, Samsung, Star,
+Tektronix and Xerox.
 
 %files -n task-printing-misc
 
