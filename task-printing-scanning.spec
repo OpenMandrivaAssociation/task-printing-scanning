@@ -32,7 +32,7 @@ scanning packages used in Mandriva.
 %package -n task-printing
 Group: System/Printing
 Summary: Task package for printing
-Requires: ImageMagick
+Requires: imagemagick
 Requires: a2ps
 Requires: cups
 Requires: cups-drivers
