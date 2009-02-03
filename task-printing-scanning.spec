@@ -3,7 +3,7 @@
 Summary: Task package for printing and scanning
 Name: task-printing-scanning
 Version: 2009.0
-Release: %mkrel 1
+Release: %mkrel 2
 License: GPL
 Group: System/Printing
 Url: http://www.mandriva.com
@@ -12,7 +12,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 #BuildArch: noarch
 Requires: task-printing = %{version}
 Requires: foomatic-db-hpijs
-Requires: hplip
+Requires: hplip-gui
 Requires: %mklibname sane-hpaio 1
 Requires: samba-client
 Requires: sane-backends
@@ -191,6 +191,7 @@ Requires: gutenprint-foomatic	>= %{gutenprint_ver}
 Requires: gutenprint-ijs	>= %{gutenprint_ver}
 Requires: cups-drivers-foo2zjs	>= %{cups_drivers_foo2zjs_ver}
 Requires: hplip			>= %{hplip_ver}
+Suggests: hplip-gui             >= %{hplip_ver}
 Requires: pnm2ppa		>= %{pnm2ppa_ver}
 
 %description -n task-printing-hp
