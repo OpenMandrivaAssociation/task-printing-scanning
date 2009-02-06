@@ -3,7 +3,7 @@
 Summary: Task package for printing and scanning
 Name: task-printing-scanning
 Version: 2009.0
-Release: %mkrel 2
+Release: %mkrel 3
 License: GPL
 Group: System/Printing
 Url: http://www.mandriva.com
@@ -49,7 +49,7 @@ Requires: gutenprint-gimp2
 Requires: gutenprint-ijs
 Requires: lesstif
 Requires: mpage
-Requires: nc
+Requires: netcat-traditional
 Requires: net-tools
 Requires: nmap
 Requires: postscript-ppds
