@@ -2,8 +2,8 @@
 
 Summary: Task package for printing and scanning
 Name: task-printing-scanning
-Version: 2009.0
-Release: %mkrel 5
+Version: 2010
+Release: %mkrel 1
 License: GPL
 Group: System/Printing
 Url: http://www.mandriva.com
@@ -11,7 +11,6 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 # <mrl> Due to sane-hpaio and to avoid rebuilding sane now (2008rc2)
 #BuildArch: noarch
 Requires: task-printing = %{version}
-Requires: foomatic-db-hpijs
 Requires: hplip-gui
 Requires: %mklibname sane-hpaio 1
 Requires: samba-client
@@ -132,7 +131,6 @@ Requires: task-printing-server	= %{version}-%{release}
 
 # The drivers
 Requires: cjet			>= %{cjet_ver}
-Requires: foomatic-db-hpijs	>= %{foomatic_db_hpijs_ver}
 Requires: ghostscript		>= %{ghostscript_ver}
 Requires: gutenprint-cups	>= %{gutenprint_ver}
 Requires: gutenprint-foomatic	>= %{gutenprint_ver}
@@ -156,7 +154,6 @@ Group: System/Printing
 Requires: task-printing-server	= %{version}-%{release}
 
 # The drivers
-Requires: foomatic-db-hpijs	>= %{foomatic_db_hpijs_ver}
 Requires: ghostscript		>= %{ghostscript_ver}
 Requires: gutenprint-cups	>= %{gutenprint_ver}
 Requires: gutenprint-foomatic	>= %{gutenprint_ver}
@@ -184,7 +181,6 @@ Group: System/Printing
 Requires: task-printing-server	= %{version}-%{release}
 
 # The drivers
-Requires: foomatic-db-hpijs	>= %{foomatic_db_hpijs_ver}
 Requires: ghostscript		>= %{ghostscript_ver}
 Requires: gutenprint-cups	>= %{gutenprint_ver}
 Requires: gutenprint-foomatic	>= %{gutenprint_ver}
@@ -214,7 +210,6 @@ Requires: task-printing-server = %{version}-%{release}
 Requires: c2050			>= %{c2050_ver}
 Requires: c2070			>= %{c2070_ver}
 Requires: drv_z42		>= %{drv_z42_ver}
-Requires: foomatic-db-hpijs	>= %{foomatic_db_hpijs_ver}
 Requires: ghostscript		>= %{ghostscript_ver}
 Requires: gutenprint-cups	>= %{gutenprint_ver}
 Requires: gutenprint-foomatic	>= %{gutenprint_ver}
@@ -250,7 +245,6 @@ Requires: task-printing-server	= %{version}-%{release}
 # The drivers
 Requires: drv_z42		>= %{drv_z42_ver}
 Requires: cups-drivers-foo2zjs	>= %{cups_drivers_foo2zjs_ver}
-Requires: foomatic-db-hpijs	>= %{foomatic_db_hpijs_ver}
 Requires: ghostscript		>= %{ghostscript_ver}
 Requires: hplip-hpijs		>= %{hplip_ver}
 Requires: stylewriter		>= %{stylewriter_ver}
@@ -279,7 +273,6 @@ Group: System/Printing
 Requires: task-printing-server	= %{version}-%{release}
 
 # The drivers
-Requires: foomatic-db-hpijs	>= %{foomatic_db_hpijs_ver}
 Requires: ghostscript		>= %{ghostscript_ver}
 Requires: hplip-hpijs		>= %{hplip_ver}
 Requires: oki4linux		>= %{oki4linux_ver}
