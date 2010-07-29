@@ -86,6 +86,7 @@ used in Mandriva.
 %define hplip_ver		2.8.2-2mdv
 %define lexmark2070_ver		0.6
 %define lexmark7000linux_ver	990516
+%define	lexmarklxx74_ver	0.8.4.2
 %define lm1100_ver		1.0.2a
 %define lxcontrol_ver		1.3
 %define cups_drivers_lz11_ver	1.2
@@ -217,6 +218,7 @@ Requires: gutenprint-ijs	>= %{gutenprint_ver}
 Requires: hplip-hpijs		>= %{hplip_ver}
 Requires: lexmark2070		>= %{lexmark2070_ver}
 Requires: lexmark7000linux	>= %{lexmark7000linux_ver}
+Requires: cups-drivers-lxx74	>= %{lexmarklxx74_ver}
 Requires: lm1100		>= %{lm1100_ver}
 Requires: cups-drivers-lz11	>= %{cups_drivers_lz11_ver}
 Requires: pbm2l2030		>= %{pbm2l2030_ver}
