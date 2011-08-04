@@ -3,7 +3,7 @@
 Summary: Task package for printing and scanning
 Name: task-printing-scanning
 Version: 2011
-Release: %mkrel 1
+Release: %mkrel 2
 License: GPL
 Group: System/Printing
 Url: http://www.mandriva.com
@@ -44,7 +44,7 @@ Requires: groff
 Requires: gutenprint-cups
 Requires: gutenprint-escputil
 Requires: gutenprint-foomatic
-Requires: gutenprint-gimp2
+#Requires: gutenprint-gimp2
 Requires: gutenprint-ijs
 Requires: lesstif
 Requires: mpage
