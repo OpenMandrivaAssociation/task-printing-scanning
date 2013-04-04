@@ -31,7 +31,6 @@ scanning packages used in Mandriva.
 Group:		System/Printing
 Summary:	Task package for printing
 Requires:	imagemagick
-Requires:	a2ps
 Requires:	cups
 Requires:	cups-drivers
 Requires:	cups-common
@@ -112,6 +111,7 @@ Requires:	printer-tools >= %{printer_tools_ver}
 Requires:	foomatic-db
 Requires:	foomatic-db-engine
 Requires:	foomatic-filters
+Requires:	a2ps
 
 %description -n task-printing-server
 This meta package will install every package needed for a full
