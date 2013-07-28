@@ -3,7 +3,7 @@
 Summary:	Task package for printing and scanning
 Name:		task-printing-scanning
 Version:	2012
-Release:	2
+Release:	3
 License:	GPL
 Group:		System/Printing
 Url:		http://www.mandriva.com
