@@ -2,11 +2,11 @@
 
 Summary:	Task package for printing and scanning
 Name:		task-printing-scanning
-Version:	2012
-Release:	3
+Version:	2013
+Release:	1
 License:	GPL
 Group:		System/Printing
-Url:		http://www.mandriva.com
+Url:		%{disturl}
 # <mrl> Due to sane-hpaio and to avoid rebuilding sane now (2008rc2)
 #BuildArch: noarch
 Requires:	task-printing = %{version}
@@ -22,7 +22,7 @@ Requires:	xsane
 
 %description
 This task package contains the full selection of printing and
-scanning packages used in Mandriva.
+scanning packages used in %{distribution}.
 
 %files
 
@@ -54,17 +54,19 @@ Requires:	printer-filters
 Requires:	printer-testpages
 Requires:	printer-utils
 Requires:	scli
-Requires:	task-printing-canon      = %{version}-%{release}
-Requires:	task-printing-epson      = %{version}-%{release}
-Requires:	task-printing-hp         = %{version}-%{release}
-Requires:	task-printing-lexmark    = %{version}-%{release}
-Requires:	task-printing-misc       = %{version}-%{release}
-Requires:	task-printing-okidata    = %{version}-%{release}
-Requires:	task-printing-server     = %{version}-%{release}
+Requires:	system-config-printer
+Suggests:	system-config-printer-gui
+Requires:	task-printing-canon = %{version}-%{release}
+Requires:	task-printing-epson = %{version}-%{release}
+Requires:	task-printing-hp = %{version}-%{release}
+Requires:	task-printing-lexmark = %{version}-%{release}
+Requires:	task-printing-misc = %{version}-%{release}
+Requires:	task-printing-okidata = %{version}-%{release}
+Requires:	task-printing-server = %{version}-%{release}
 
 %description -n task-printing
 This task package contains the default selection of printing packages
-used in Mandriva.
+used in %{distribution}.
 
 %files -n task-printing
 
@@ -286,119 +288,4 @@ get it working.
 %files -n task-printing-okidata
 
 #-------------------------------------------------------------------------------
-
-
-
-%changelog
-* Thu Aug 04 2011 Alex Burmashev <burmashev@mandriva.org> 2011-2
-+ Revision: 693235
-- removed guteprint-gimp2 from task-printing requires, as it is not needed by default
-
-* Wed Apr 20 2011 Antoine Ginies <aginies@mandriva.com> 2011-1
-+ Revision: 656225
-- release 2011
-
-* Thu Jul 29 2010 Juan Luis Baptiste <juancho@mandriva.org> 2010-2mdv2011.0
-+ Revision: 563226
-- Fix bug (mdv 60137)
-
-* Wed Mar 17 2010 Oden Eriksson <oeriksson@mandriva.com> 2010-2mdv2010.1
-+ Revision: 524167
-- rebuilt for 2010.1
-
-* Wed Oct 14 2009 Oden Eriksson <oeriksson@mandriva.com> 2010-1mdv2010.0
-+ Revision: 457373
-- foomatic-db-hpijs is obsolete, provided by hp and by the hplip package now
-
-* Tue Sep 01 2009 Christophe Fergeau <cfergeau@mandriva.com> 2009.0-5mdv2010.0
-+ Revision: 423763
-- rebuild
-
-* Sat Mar 07 2009 Antoine Ginies <aginies@mandriva.com> 2009.0-4mdv2009.1
-+ Revision: 351486
-- rebuild
-
-* Fri Feb 06 2009 Gustavo De Nardin <gustavodn@mandriva.com> 2009.0-3mdv2009.1
-+ Revision: 338302
-- nc got renamed to netcat-traditional
-
-* Tue Feb 03 2009 Frederik Himpe <fhimpe@mandriva.org> 2009.0-2mdv2009.1
-+ Revision: 337070
-- Require hplip-gui in task-printing-scanning instead of GUI-less hplip
-- Suggest hplip-gui in task-printing-hp in addition to hplip requirement
-  (so that hplip-gui is still installed by default, but it becomes possible
-  to easily set up a HP printer without having to install X and QT libraries)
-
-  + Oden Eriksson <oeriksson@mandriva.com>
-    - lowercase ImageMagick
-
-* Thu Sep 04 2008 Tiago Salem <salem@mandriva.com.br> 2009.0-1mdv2009.0
-+ Revision: 280915
-- update version to 2009.0
-
-* Wed Jun 18 2008 Thierry Vignaud <tv@mandriva.org> 2008.1-2mdv2009.0
-+ Revision: 225637
-- rebuild
-
-* Wed Feb 13 2008 Marcelo Ricardo Leitner <mrl@mandriva.com> 2008.1-1mdv2008.1
-+ Revision: 167106
-- New version: 2008.1
-- task-printing-hp does not require hplip-hpijs-ppds anymore:
-  we are using dynamic ppds now and Fax ppd was moved to hplip
-  main package.
-- Force hplip version greater than 2.8.2-2mdv so that above
-  changes are inplace.
-
-  + Thierry Vignaud <tv@mandriva.org>
-    - fix description-line-too-long
-
-* Mon Jan 28 2008 Marcelo Ricardo Leitner <mrl@mandriva.com> 2008-5mdv2008.1
-+ Revision: 159265
-- Make task-printing-hp requires hplip-hpijs-ppds, due to HP Fax .ppd file,
-  needed by printerdrake (for fax queues).
-
-  + Olivier Blin <blino@mandriva.org>
-    - restore BuildRoot
-
-  + Thierry Vignaud <tv@mandriva.org>
-    - kill re-definition of %%buildroot on Pixel's request
-
-* Wed Sep 19 2007 Marcelo Ricardo Leitner <mrl@mandriva.com> 2008-4mdv2008.0
-+ Revision: 91096
-- Do not require xpp anymore. Closes: #33077
-
-* Wed Sep 19 2007 Marcelo Ricardo Leitner <mrl@mandriva.com> 2008-3mdv2008.0
-+ Revision: 90697
-- Turn off noarch for this package: fix sane-hpaio requires and avoid
-  rebuilding sane right now (2008rc2)
-  TODO: Fix it in proper way after 2008.0: fix provides on lib64sane-hpaio.
-
-* Mon Sep 17 2007 Marcelo Ricardo Leitner <mrl@mandriva.com> 2008-2mdv2008.0
-+ Revision: 89217
-- Adds requires to gutenprint-ijs in all tasks that uses gutenprint, as it is a must.
-
-* Fri Sep 14 2007 Marcelo Ricardo Leitner <mrl@mandriva.com> 2008-1mdv2008.0
-+ Revision: 85600
-- Fix group tags.
-- Version 2008
-- Add a manufacturer-level task packages: references all you need to have a
-  <manufacturer> printer working (for cups for now).
-
-
-* Tue Mar 27 2007 Olivier Blin <oblin@mandriva.com> 2007.1-4mdv2007.1
-+ Revision: 148812
-- create a printing-focused task-printing package (#29693)
-
-* Sun Mar 11 2007 Olivier Blin <oblin@mandriva.com> 2007.1-3mdv2007.1
-+ Revision: 141429
-- do not require ppdfilt in task-printing-scanning (#29374)
-
-* Thu Mar 08 2007 Olivier Blin <oblin@mandriva.com> 2007.1-2mdv2007.1
-+ Revision: 134971
-- fix requires on x86_64 (and do not be noarch)
-
-* Thu Mar 01 2007 Olivier Blin <oblin@mandriva.com> 2007.1-1mdv2007.1
-+ Revision: 130362
-- initial release (based on rpmsrate and One auto_inst)
-- Create task-printing-scanning
 
