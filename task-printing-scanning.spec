@@ -3,7 +3,7 @@
 Summary:	Task package for printing and scanning
 Name:		task-printing-scanning
 Version:	2013
-Release:	4
+Release:	5
 License:	GPL
 Group:		System/Printing
 Url:		%{disturl}
