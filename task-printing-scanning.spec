@@ -2,8 +2,8 @@
 
 Summary:	Task package for printing and scanning
 Name:		task-printing-scanning
-Version:	%distro_release
-Release:	3
+Version:	2015.0
+Release:	1
 License:	GPL
 Group:		System/Printing
 Url:		%{disturl}
