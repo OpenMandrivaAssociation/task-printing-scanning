@@ -3,7 +3,7 @@
 Summary:	Task package for printing and scanning
 Name:		task-printing-scanning
 Version:	2015.0
-Release:	2
+Release:	3
 License:	GPL
 Group:		System/Printing
 Url:		%{disturl}
@@ -35,6 +35,7 @@ Requires:	cups
 Requires:	cups-drivers
 Requires:	cups-common
 Requires:	foomatic-db
+Suggests:	foomatic-db-nonfree
 Requires:	foomatic-db-engine
 Requires:	foomatic-filters
 Requires:	ghostscript
@@ -76,14 +77,14 @@ used in %{distribution}.
 %define c2050_ver 0.4
 %define c2070_ver 0.99
 %define cjet_ver 0.8.9
-%define cups_ver 1.3.0
+%define cups_ver 2.0.2
 %define drv_z42_ver 0.4.3
 %define cups_drivers_foo2zjs_ver 0.0
 %define foomatic_ver 1:3.0.2
 %define foomatic_db_hpijs_ver 20070820
 %define ghostscript_ver 8.15.4
 %define gutenprint_ver 5.0.1
-%define hplip_ver 2.8.2-2mdv
+%define hplip_ver 3.15.4
 %define lexmark2070_ver 0.6
 %define lexmark7000linux_ver 990516
 %define lexmarklxx74_ver 0.8.4.2
