@@ -45,7 +45,6 @@ Requires:	gutenprint-escputil
 Requires:	gutenprint-foomatic
 #Requires: gutenprint-gimp2
 Requires:	gutenprint-ijs
-#Requires:	lesstif
 Requires:	mpage
 Requires:	netcat-traditional
 Requires:	net-tools
