@@ -3,7 +3,7 @@
 Summary:	Task package for printing and scanning
 Name:		task-printing-scanning
 Version:	2015.0
-Release:	5
+Release:	6
 License:	GPL
 Group:		System/Printing
 Url:		%{disturl}
@@ -17,7 +17,6 @@ Requires:	sane-backends
 Requires:	saned
 Requires:	scanner-gui
 Requires:	usbutils
-Requires:	xinetd
 Requires:	xsane
 
 %description
@@ -25,7 +24,6 @@ This task package contains the full selection of printing and
 scanning packages used in %{distribution}.
 
 %files
-
 
 %package -n task-printing
 Group:		System/Printing
