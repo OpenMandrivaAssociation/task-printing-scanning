@@ -3,7 +3,7 @@
 Summary:	Task package for printing and scanning
 Name:		task-printing-scanning
 Version:	2015.0
-Release:	8
+Release:	9
 License:	GPL
 Group:		System/Printing
 Url:		%{disturl}
@@ -40,9 +40,9 @@ Requires:	ghostscript
 Requires:	groff
 Requires:	gutenprint-cups
 Requires:	gutenprint-escputil
-Requires:	gutenprint-foomatic
+#Requires:	gutenprint-foomatic
 #Requires: gutenprint-gimp2
-Requires:	gutenprint-ijs
+#Requires:	gutenprint-ijs
 Requires:	mpage
 Requires:	netcat-traditional
 Requires:	net-tools
