@@ -132,8 +132,8 @@ Requires:	task-printing-server = %{version}-%{release}
 Requires:	cjet >= %{cjet_ver}
 Requires:	ghostscript >= %{ghostscript_ver}
 Requires:	gutenprint-cups >= %{gutenprint_ver}
-Requires:	gutenprint-foomatic >= %{gutenprint_ver}
-Requires:	gutenprint-ijs >= %{gutenprint_ver}
+#Requires:	gutenprint-foomatic >= %{gutenprint_ver}
+#Requires:	gutenprint-ijs >= %{gutenprint_ver}
 Requires:	hplip-hpijs	>= %{hplip_ver}
 
 %description -n task-printing-canon
@@ -155,8 +155,8 @@ Requires:	task-printing-server = %{version}-%{release}
 # The drivers
 Requires:	ghostscript >= %{ghostscript_ver}
 Requires:	gutenprint-cups >= %{gutenprint_ver}
-Requires:	gutenprint-foomatic >= %{gutenprint_ver}
-Requires:	gutenprint-ijs >= %{gutenprint_ver}
+#Requires:	gutenprint-foomatic >= %{gutenprint_ver}
+#Requires:	gutenprint-ijs >= %{gutenprint_ver}
 Requires:	hplip-hpijs >= %{hplip_ver}
 
 # Some utils
@@ -182,8 +182,8 @@ Requires:	task-printing-server = %{version}-%{release}
 # The drivers
 Requires:	ghostscript >= %{ghostscript_ver}
 Requires:	gutenprint-cups >= %{gutenprint_ver}
-Requires:	gutenprint-foomatic >= %{gutenprint_ver}
-Requires:	gutenprint-ijs >= %{gutenprint_ver}
+#Requires:	gutenprint-foomatic >= %{gutenprint_ver}
+#Requires:	gutenprint-ijs >= %{gutenprint_ver}
 Requires:	cups-drivers-foo2zjs >= %{cups_drivers_foo2zjs_ver}
 Requires:	hplip >= %{hplip_ver}
 Suggests:	hplip-gui >= %{hplip_ver}
@@ -211,8 +211,8 @@ Requires:	c2070 >= %{c2070_ver}
 Requires:	drv_z42 >= %{drv_z42_ver}
 Requires:	ghostscript >= %{ghostscript_ver}
 Requires:	gutenprint-cups >= %{gutenprint_ver}
-Requires:	gutenprint-foomatic >= %{gutenprint_ver}
-Requires:	gutenprint-ijs >= %{gutenprint_ver}
+#Requires:	gutenprint-foomatic >= %{gutenprint_ver}
+#Requires:	gutenprint-ijs >= %{gutenprint_ver}
 Requires:	hplip-hpijs >= %{hplip_ver}
 Requires:	lexmark2070 >= %{lexmark2070_ver}
 Requires:	lexmark7000linux >= %{lexmark7000linux_ver}
