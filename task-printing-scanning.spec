@@ -2,8 +2,8 @@
 
 Summary:	Task package for printing and scanning
 Name:		task-printing-scanning
-Version:	2015.0
-Release:	11
+Version:	4.0
+Release:	1
 License:	GPL
 Group:		System/Printing
 Url:		%{disturl}
@@ -52,15 +52,13 @@ Requires:	printer-filters
 Requires:	printer-testpages
 Requires:	printer-utils
 Requires:	scli
-Requires:	system-config-printer
-Suggests:	system-config-printer-gui
-Requires:	task-printing-canon = %{version}-%{release}
-Requires:	task-printing-epson = %{version}-%{release}
-Requires:	task-printing-hp = %{version}-%{release}
-Requires:	task-printing-lexmark = %{version}-%{release}
-Requires:	task-printing-misc = %{version}-%{release}
-Requires:	task-printing-okidata = %{version}-%{release}
-Requires:	task-printing-server = %{version}-%{release}
+Suggests:	task-printing-canon = %{version}-%{release}
+Suggests:	task-printing-epson = %{version}-%{release}
+Suggests:	task-printing-hp = %{version}-%{release}
+Suggests:	task-printing-lexmark = %{version}-%{release}
+Suggests:	task-printing-misc = %{version}-%{release}
+Suggests:	task-printing-okidata = %{version}-%{release}
+Suggests:	task-printing-server = %{version}-%{release}
 
 %description -n task-printing
 This task package contains the default selection of printing packages
