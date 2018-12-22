@@ -3,7 +3,7 @@
 Summary:	Task package for printing and scanning
 Name:		task-printing-scanning
 Version:	4.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		System/Printing
 Url:		%{disturl}
@@ -31,6 +31,7 @@ Summary:	Task package for printing
 Requires:	imagemagick
 Requires:	cups
 Requires:	cups-drivers
+Requires:	cups-filters
 Requires:	cups-common
 Requires:	foomatic-db
 Suggests:	foomatic-db-nonfree
