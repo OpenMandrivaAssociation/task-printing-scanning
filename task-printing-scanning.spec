@@ -10,7 +10,6 @@ Url:		%{disturl}
 # <mrl> Due to sane-hpaio and to avoid rebuilding sane now (2008rc2)
 #BuildArch: noarch
 Requires:	task-printing = %{version}
-Requires:	hplip-gui
 Requires:	%{mklibname sane-hpaio 1}
 Requires:	samba-client
 Requires:	sane-backends
