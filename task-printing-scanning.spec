@@ -48,7 +48,6 @@ Requires:	netcat-traditional
 Requires:	net-tools
 Requires:	nmap
 Requires:	postscript-ppds
-Requires:	printer-filters
 Requires:	printer-testpages
 Requires:	printer-utils
 Requires:	scli
@@ -105,7 +104,7 @@ Summary:	Meta package for a full CUPS server
 Group:		System/Printing
 Requires:	cups >= %{cups_ver}
 Requires:	ghostscript >= %{ghostscript_ver}
-Requires:	printer-tools >= %{printer_tools_ver}
+#Requires:	printer-tools >= %{printer_tools_ver}
 Requires:	foomatic-db
 Requires:	foomatic-db-engine
 Requires:	foomatic-filters
@@ -159,7 +158,7 @@ Requires:	hplip-hpijs >= %{hplip_ver}
 
 # Some utils
 Requires:	gutenprint-escputil >= %{gutenprint_ver}
-Requires:	printer-tools >= %{printer_tools_ver}
+#Requires:	printer-tools >= %{printer_tools_ver}
 
 %description -n task-printing-epson
 This meta package will install every printer driver available for printers from
@@ -204,23 +203,23 @@ Group:		System/Printing
 Requires:	task-printing-server = %{version}-%{release}
 
 # The drivers
-Requires:	c2050 >= %{c2050_ver}
-Requires:	c2070 >= %{c2070_ver}
-Requires:	drv_z42 >= %{drv_z42_ver}
+Suggests:	c2050 >= %{c2050_ver}
+Suggests:	c2070 >= %{c2070_ver}
+Suggests:	drv_z42 >= %{drv_z42_ver}
 Requires:	ghostscript >= %{ghostscript_ver}
 Requires:	gutenprint-cups >= %{gutenprint_ver}
 #Requires:	gutenprint-foomatic >= %{gutenprint_ver}
 #Requires:	gutenprint-ijs >= %{gutenprint_ver}
 Requires:	hplip-hpijs >= %{hplip_ver}
-Requires:	lexmark2070 >= %{lexmark2070_ver}
-Requires:	lexmark7000linux >= %{lexmark7000linux_ver}
-Requires:	cups-drivers-lxx74 >= %{lexmarklxx74_ver}
-Requires:	lm1100 >= %{lm1100_ver}
-Requires:	cups-drivers-lz11 >= %{cups_drivers_lz11_ver}
-Requires:	pbm2l2030 >= %{pbm2l2030_ver}
+Suggests:	lexmark2070 >= %{lexmark2070_ver}
+Suggests:	lexmark7000linux >= %{lexmark7000linux_ver}
+Suggests:	cups-drivers-lxx74 >= %{lexmarklxx74_ver}
+Suggests:	lm1100 >= %{lm1100_ver}
+Suggests:	cups-drivers-lz11 >= %{cups_drivers_lz11_ver}
+Suggests:	pbm2l2030 >= %{pbm2l2030_ver}
 
 # Some lex utils
-Requires:	printer-tools >= %{printer_tools_ver}
+#Requires:	printer-tools >= %{printer_tools_ver}
 
 %description -n task-printing-lexmark
 This meta package will install every printer driver available for printers from
@@ -239,14 +238,14 @@ Group:		System/Printing
 Requires:	task-printing-server = %{version}-%{release}
 
 # The drivers
-Requires:	drv_z42 >= %{drv_z42_ver}
+Suggests:	drv_z42 >= %{drv_z42_ver}
 Requires:	cups-drivers-foo2zjs >= %{cups_drivers_foo2zjs_ver}
 Requires:	ghostscript >= %{ghostscript_ver}
 Requires:	hplip-hpijs >= %{hplip_ver}
-Requires:	stylewriter >= %{stylewriter_ver}
-Requires:	ml85p >= %{ml85p_ver}
-Requires:	pbm2lwxl >= %{pbm2lwxl_ver}
-Requires:	pentaxpj >= %{pentaxpj_ver}
+Suggests:	stylewriter >= %{stylewriter_ver}
+Suggests:	ml85p >= %{ml85p_ver}
+Suggests:	pbm2lwxl >= %{pbm2lwxl_ver}
+Suggests:	pentaxpj >= %{pentaxpj_ver}
 Requires:	ppmtomd	>= %{ppmtomd_ver}
 
 %description -n task-printing-misc
@@ -271,7 +270,7 @@ Requires:	task-printing-server = %{version}-%{release}
 # The drivers
 Requires:	ghostscript >= %{ghostscript_ver}
 Requires:	hplip-hpijs >= %{hplip_ver}
-Requires:	oki4linux >= %{oki4linux_ver}
+Suggests:	oki4linux >= %{oki4linux_ver}
 Requires:	ppmtomd >= %{ppmtomd_ver}
 
 %description -n task-printing-okidata
