@@ -3,14 +3,13 @@
 Summary:	Task package for printing and scanning
 Name:		task-printing-scanning
 Version:	4.0
-Release:	1
+Release:	3
 License:	GPL
 Group:		System/Printing
 Url:		%{disturl}
 # <mrl> Due to sane-hpaio and to avoid rebuilding sane now (2008rc2)
 #BuildArch: noarch
 Requires:	task-printing = %{version}
-Requires:	hplip-gui
 Requires:	%{mklibname sane-hpaio 1}
 Requires:	samba-client
 Requires:	sane-backends
@@ -31,6 +30,7 @@ Summary:	Task package for printing
 Requires:	imagemagick
 Requires:	cups
 Requires:	cups-drivers
+Requires:	cups-filters
 Requires:	cups-common
 Requires:	foomatic-db
 Suggests:	foomatic-db-nonfree
