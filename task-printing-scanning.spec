@@ -3,7 +3,7 @@
 Summary:	Task package for printing and scanning
 Name:		task-printing-scanning
 Version:	4.0
-Release:	3
+Release:	4
 License:	GPL
 Group:		System/Printing
 Url:		%{disturl}
@@ -155,6 +155,7 @@ Requires:	gutenprint-cups >= %{gutenprint_ver}
 #Requires:	gutenprint-foomatic >= %{gutenprint_ver}
 #Requires:	gutenprint-ijs >= %{gutenprint_ver}
 Requires:	hplip-hpijs >= %{hplip_ver}
+Requires: epson-inkjet-printer-escpr
 
 # Some utils
 Requires:	gutenprint-escputil >= %{gutenprint_ver}
