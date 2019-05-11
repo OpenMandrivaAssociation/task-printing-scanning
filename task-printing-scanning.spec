@@ -3,7 +3,7 @@
 Summary:	Task package for printing and scanning
 Name:		task-printing-scanning
 Version:	4.0
-Release:	4
+Release:	5
 License:	GPL
 Group:		System/Printing
 Url:		%{disturl}
@@ -16,7 +16,8 @@ Requires:	sane-backends
 Requires:	saned
 Requires:	scanner-gui
 Requires:	usbutils
-Requires:	xsane
+# Why? scanner-gui already pulls in xsane or skanlite...
+#Requires:	xsane
 
 %description
 This task package contains the full selection of printing and
